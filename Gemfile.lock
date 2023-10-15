@@ -74,6 +74,8 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    addressable (2.8.5)
+      public_suffix (>= 2.0.2, < 6.0)
     base64 (0.1.1)
     bcrypt (3.1.19)
     bigdecimal (3.1.4)
@@ -83,6 +85,15 @@ GEM
     builder (3.2.4)
     bulma-rails (0.9.4)
       sassc (~> 2.0)
+    capybara (3.39.2)
+      addressable
+      matrix
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (>= 1.5, < 3.0)
+      xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -126,6 +137,7 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
+    matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.20.0)
     msgpack (1.7.2)
@@ -145,6 +157,7 @@ GEM
     orm_adapter (0.5.0)
     psych (5.1.1)
       stringio
+    public_suffix (5.0.3)
     puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -188,6 +201,7 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
+    regexp_parser (2.8.2)
     reline (0.3.9)
       io-console (~> 0.5)
     responders (3.1.1)
@@ -243,6 +257,8 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
     zeitwerk (2.6.12)
 
 PLATFORMS
@@ -251,6 +267,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bulma-rails (~> 0.9.4)
+  capybara
   debug
   devise (~> 4.9)
   factory_bot (~> 6.3)
