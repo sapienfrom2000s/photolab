@@ -62,8 +62,8 @@ group :development do
 
 end
 
-
 gem "devise", "~> 4.9"
-
-
 gem "factory_bot", "~> 6.3"
+gem 'sassc', '~> 2.1.0'
+gem "bulma-rails", "~> 0.9.4"
+

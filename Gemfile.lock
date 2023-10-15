@@ -81,6 +81,8 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bulma-rails (0.9.4)
+      sassc (~> 2.0)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -100,6 +102,7 @@ GEM
     erubi (1.12.0)
     factory_bot (6.3.0)
       activesupport (>= 5.0.0)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -208,6 +211,8 @@ GEM
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
     ruby2_keywords (0.0.5)
+    sassc (2.1.0-x86_64-linux)
+      ffi (~> 1.9)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -245,6 +250,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bulma-rails (~> 0.9.4)
   debug
   devise (~> 4.9)
   factory_bot (~> 6.3)
@@ -253,6 +259,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.1.1)
   rspec-rails (~> 6.0.0)
+  sassc (~> 2.1.0)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
