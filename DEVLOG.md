@@ -29,3 +29,11 @@ of creation will be mapped to this resource. Now, resource can have
 association with whatever it wants. All admins will have the access
 to modify it by something like `admin1.resource.banner`.
 In views we can have Resource.first.banner
+
+### Day 4
+
+Messy day, I spent almost 5 hours to make action text works. Turns out
+that I need to procomile every time css or js changes. I thought that
+rails detects that by seeing the change in hash of file. Didn't think
+much about naming. Huge mistake. I should have named Card as Card Prod
+ucts and Photo as Photo Products. 
