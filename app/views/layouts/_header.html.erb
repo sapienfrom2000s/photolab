@@ -12,16 +12,30 @@
   </div>
   <div class="navbar-menu">
 	  <div class="navbar-end">
-		  <div class="navbar-item has-dropdown">
-  			<a class="navbar-link">
+		  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" >
     			    Card Store	
-  			</a>
-  		  </div>
+                        </a>
+                        <div class="navbar-dropdown">
+                          <% Card.all.each do |card| %>
+                              <a class="navbar-item" href="/cards/<%= card.id %>">
+                                <%= card.title %>
+                              </a> 
+                          <% end %>
+                        </div>
+                  </div>
 
-		  <div class="navbar-item has-dropdown">
+		  <div class="navbar-item has-dropdown is-hoverable">
   			<a class="navbar-link">
     			    Photo Products
   			</a>
+                        <div class="navbar-dropdown">
+                          <% Photo.all.each do |photo| %>
+                              <a class="navbar-item" href="/cards/<%= photo.id %>">
+                                <%= photo.title %>
+                              </a> 
+                          <% end %>
+                        </div>
   		  </div>
 		    <a class="navbar-item">
                         Information
