@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   before_action :set_card, only: %i[ show edit update destroy ]
-  # before_action :authenticate_admin!, except: %i[show]
+  before_action :authenticate_admin!, except: %i[show]
 
   # GET /cards or /cards.json
   def index
@@ -23,12 +23,14 @@ class CardsController < ApplicationController
   # POST /cards or /cards.json
   def create
     @card = Card.create params.require(:card).permit(:content, :title)
+    flash[:notice] = 'Card Content successfully created'
     redirect_to @card
   end
 
   # PATCH/PUT /cards/1 or /cards/1.json
   def update
     @card.update params.require(:card).permit(:content, :title)
+    flash[:notice] = 'Card Content successfully updated'
     redirect_to @card
   end
 
@@ -37,7 +39,7 @@ class CardsController < ApplicationController
     @card.destroy!
 
     respond_to do |format|
-      format.html { redirect_to cards_url, notice: "Card was successfully destroyed." }
+      format.html { redirect_to cards_url, notice: "Card content was successfully destroyed." }
       format.json { head :no_content }
     end
   end

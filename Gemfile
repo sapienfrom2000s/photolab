@@ -67,3 +67,4 @@ gem "factory_bot", "~> 6.3"
 gem 'capybara'
 gem "bulma-rails", "~> 0.9.4"
 gem 'sassc-rails', '~> 2.1.1'
+gem 'selenium-webdriver'

@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: %i[ show edit update destroy ]
-  # before_action :authenticate_admin!, except: %i[show]
+  before_action :authenticate_admin!, except: %i[show]
 
   # GET /photos or /photos.json
   def index
@@ -24,12 +24,14 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.save
+    flash[:notice] = 'Photo Content successfully created'
     redirect_to @photo 
   end
 
   # PATCH/PUT /photos/1 or /photos/1.json
   def update
     @photo.update(photo_params)
+    flash[:notice] = 'Photo Content successfully updated'
     redirect_to @photo
   end
 
@@ -38,7 +40,7 @@ class PhotosController < ApplicationController
     @photo.destroy!
 
     respond_to do |format|
-      format.html { redirect_to photos_url, notice: "Photo was successfully destroyed." }
+      format.html { redirect_to photos_url, notice: "Photo content was successfully destroyed." }
       format.json { head :no_content }
     end
   end
