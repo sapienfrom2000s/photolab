@@ -1,8 +1,8 @@
 <h1>Card Products</h1>
 
-<%= button_to "New card", new_card_path, :class => ['button', 'is-info'] %>
+<%= link_to "New card", new_card_path, :class => ['button', 'is-info'] %>
 <br>
-<div id="photos">
+<div id="photos" class='mt-4'>
   <% @cards.each do |card| %>
     <p>
     <%= link_to "#{card.title}", card %>
