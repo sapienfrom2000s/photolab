@@ -37,3 +37,12 @@ that I need to procomile every time css or js changes. I thought that
 rails detects that by seeing the change in hash of file. Didn't think
 much about naming. Huge mistake. I should have named Card as Card Prod
 ucts and Photo as Photo Products. 
+
+### Day 5
+
+Fucked up day, wasted. Everything was working correctly untill I added 
+a new RAM. I don't know what happened, but the action text stopped 
+displaying. I even rolled back to the working version of yesterday. No
+luck. I made a test app just to check action text yesterday. In that
+test app too, it's not showing.I was happy that my work is done in the
+backend. Oh man! 

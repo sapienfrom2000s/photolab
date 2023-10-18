@@ -6,12 +6,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
   <body>
     <%= render "layouts/header" %>
-    <%= yield %>
+    <div class='content column is-9 container is-centered py-4'>
+      <%= yield %>
+    </div>
   </body>
 </html>
