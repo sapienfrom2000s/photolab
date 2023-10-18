@@ -51,3 +51,9 @@ backend. Oh man!
 
 Fixed. The problem was adblocker blocking js. GPT gave me the clue. Re
 covered most of what was lost.
+
+### Day 6
+
+After fixing action text. The target for today was just to write end to
+end tests for all functionalities. It's done. Had to enable driver that
+supports js to input in action text.
