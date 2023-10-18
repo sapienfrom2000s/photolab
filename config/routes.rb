@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :photos
   resources :cards
   # Recommended is devise_for :users, skip: [:registrations, :confirmations], skip_helpers: true but I want to see the conflicts
-    devise_for :admins, only: :sessions
+    devise_for :admins, only: :sessions, controllers:{ sessions: 'admin/sessions'}
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

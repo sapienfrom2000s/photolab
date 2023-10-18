@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   before_action :set_card, only: %i[ show edit update destroy ]
-  before_action :authenticate_admin!, except: %i[show]
+  # before_action :authenticate_admin!, except: %i[show]
 
   # GET /cards or /cards.json
   def index
