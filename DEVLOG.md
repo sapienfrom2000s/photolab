@@ -46,3 +46,8 @@ displaying. I even rolled back to the working version of yesterday. No
 luck. I made a test app just to check action text yesterday. In that
 test app too, it's not showing.I was happy that my work is done in the
 backend. Oh man! 
+
+### Day 5.5
+
+Fixed. The problem was adblocker blocking js. GPT gave me the clue. Re
+covered most of what was lost.

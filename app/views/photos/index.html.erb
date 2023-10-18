@@ -1,14 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Photos</h1>
-
+<h1>Photo Products</h1>
+<%= button_to "New Photo Product", new_photo_path, :class => ['button', 'is-info'] %><br>
 <div id="photos">
   <% @photos.each do |photo| %>
-    <%= render photo %>
-    <p>
-      <%= link_to "Show this photo", photo %>
+    <p> 
+    <%= link_to "#{photo.title}", photo %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New photo", new_photo_path %>
