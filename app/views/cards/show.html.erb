@@ -2,9 +2,11 @@
 
 <%= render @card %>
 
+<% if admin_signed_in? %>
 <div>
   <%= link_to "Edit this card", edit_card_path(@card) %> |
   <%= link_to "Back to cards", cards_path %>
 
   <%= button_to "Destroy this card", @card, method: :delete %>
 </div>
+<% end %>
