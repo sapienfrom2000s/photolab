@@ -16,8 +16,8 @@ renamed
 ### Installation
 
 1. This application uses ruby '3.2.2'. Install it via rbenv or rvm.
-Alternatively, you can follow this tutorial from [theodinproject]
-(https://www.theodinproject.com/lessons/ruby-installing-ruby). This
+Alternatively, you can follow this tutorial from (theodinproject)
+[https://www.theodinproject.com/lessons/ruby-installing-ruby]. This
 tutorial might get updated in future, make sure you are installing
 ruby '3.2.2'.
 
@@ -31,5 +31,5 @@ ruby '3.2.2'.
 
 ### Overview
 
-Admins can create photo and card products. The can do it via WYSIWYG
+Admins can create photo and card products. They can do it via WYSIWYG
 editor. Visitors can only see the photo and card products.
