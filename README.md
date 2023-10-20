@@ -26,9 +26,12 @@ ruby '3.2.2'.
 3. Run `bundle install`
 
 4. Run `rails db:seed`. You can now login as admin by filling email as
-`bla@bla.com` and password as `password`.
+`johndoe@example.com` and password as `password`.
 
 5. Start the server by typing `rails s` in terminal.
+
+6. Go to `https://www.localhost:3000` on your local machine to access
+ the app.
 
 ### Overview
 
