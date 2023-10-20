@@ -25,9 +25,10 @@ ruby '3.2.2'.
 
 3. Run `bundle install`
 
-4. Start the server by typing `rails s` in terminal.
+4. Run `rails db:seed`. You can now login as admin by filling email as
+`bla@bla.com` and password as `password`.
 
-5. You can use `rails console` to create admins.
+5. Start the server by typing `rails s` in terminal.
 
 ### Overview
 
