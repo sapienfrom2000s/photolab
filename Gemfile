@@ -68,3 +68,4 @@ gem 'capybara'
 gem "bulma-rails", "~> 0.9.4"
 gem 'sassc-rails', '~> 2.1.1'
 gem 'selenium-webdriver'
+gem 'simplecov', require: false, group: :test
